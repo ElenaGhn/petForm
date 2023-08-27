@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { PetService } from '../pet.service';
-import { Pet } from '../pet-models';
+import { Pet } from 'src/app/pet-models';
+import { PetService } from 'src/app/pet.service';
 
 @Component({
   selector: 'app-add-pet',
