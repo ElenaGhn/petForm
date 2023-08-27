@@ -1,0 +1,25 @@
+<button (click)="togglePetForm()" class="toggle-button">Toggle Pet Form</button>
+
+<div *ngIf="showPetForm">
+  <form (ngSubmit)="register(petForm.value)" #petForm="ngForm">
+    <label for="animal">Animal:</label>
+    <input type="text" id="animal" name="animal" ngModel />
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" ngModel />
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" ngModel />
+
+    <label for="sex">Sex:</label>
+    <input type="text" id="sex" name="sex" ngModel />
+
+    <label for="color">Color:</label>
+    <input type="text" id="color" name="color" ngModel />
+
+    <label for="sterilized">Sterilized:</label>
+    <input type="checkbox" id="sterilized" name="sterilized" ngModel />
+
+    <button type="submit" class="add-button">Add Pet</button>
+  </form>
+</div>
